@@ -3,7 +3,6 @@
 
 int main()
 {
-    Term a(0, -1);
-    Polynomial p(a);
+    Polynomial p;
     return 0;
 }

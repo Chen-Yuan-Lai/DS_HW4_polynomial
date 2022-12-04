@@ -15,13 +15,13 @@ struct Term
 class Polynomial
 {
 public:
-    Polynomial(Term a);
+    Polynomial();
     ~Polynomial();
-    int evaluate();
+    int evaluate(int x);
     Polynomial operator+(const Polynomial &b) const;
 
 private:
-    cirChain<Term> poly;
+    cirChain<Term> *poly;
 };
 
 #endif
